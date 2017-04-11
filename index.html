@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Moscow Mule Week by Russian Standard Vodka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drinks are on us! Taste a variety of delicious Moscow Mule recipes at participating bars near you. RSVP now for details.">
+  <meta property="og:title" content="Moscow Mule Week by Russian Standard Vodka" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://muleweek.com" />
+  <meta property="og:image" content="http://roust.derek.codes/img/header-bg.jpg" />
+  <meta property="og:description" content="Drinks are on us! Taste a variety of delicious Moscow Mule recipes at participating bars near you. RSVP now for details.">
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="stylesheet" href="mmw.css">
+  <!-- The order of the scripts is important because mmw.map.mapsLoaded
+       must exist when Google Maps loads. Do not use async here. -->
+  <script src="mmw.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARgwhPIhA73vRNW5kh-45fyqSwtLjUD5U&callback=mmw.map.mapsLoaded&libraries=places" defer></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-97183977-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div id="age-dialog">
+    <div class="curtain"></div>
+    <div class="dialog">
+      You must be at least 21 years of age to visit this website.
+      <a href="#" id="age-dialog-yes">Yes, I am 21 years old or older</a>
+      <a href="#" id="age-dialog-no">No, I am not yet 21 years old</a>
+    </div>
+  </div>
+  <header>
+    <div class="content">
+      <div class="mmw-logo"></div>
+      <ul class="social">
+        <li><a href="https://www.instagram.com/explore/tags/mulesarecool/">#mulesarecool</a></li>
+        <li><a href="https://www.facebook.com/RussianStandardVodka" class="icon-fb"></a></li>
+        <li><a href="https://www.instagram.com/russianstandardvodka/" class="icon-ig"></a></li>
+      </ul>
+      <div class="hero-text">
+        <h1>Moscow Mule Week</h1>
+        <p>Drinks are on us! Taste a variety of delicious Moscow Mule recipes at participating bars near you. RSVP now for details.</p>
+        <a href="#" id="locations-button">Locations</a>
+        <a href="https://www.facebook.com/RussianStandardVodka">RSVP</a>
+        <!-- <a href="fb://event?id=275597242894381">RSVP</a> -->
+      </div>
+      <a href="http://www.russianstandardvodka.com" class="rsv-logo"></a>
+    </div>
+  </header>
+  <section class="when">
+    <h2>When and Where</h2>
+    <div class="map">
+      <div class="map-content">
+        <div class="rivets"></div>
+        <div id="google-map"></div>
+      </div>
+    </div>
+    <div class="locations">
+      <div class="list-title">
+        <div class="rivets"></div>
+        <h3>Participating bars near you</h3>
+      </div>
+      <div class="list-content">
+        <div class="rivets"></div>
+        <div class="search">
+          <input type="text" id="search-input" placeholder="Search near you..."></input>
+        </div>
+        <ul id="location-list"></ul>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2>Event Gallery</h2>
+    <div class="text-content">
+      <p>Check in to participating bars during our Moscow Mule Week Events with #MulesAreCool and drinks are on us!</p>
+      <div id="instagram-feed">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="http://www.russianstandardvodka.com" class="rsv-logo"></a>
+    <div class="legal">
+      <p>Must be 21 years or older to participate.</p>
+      <p>Please drink responsibly. Russian Standard&reg; Vodka. Product of Russia.
+      <p>100% grain. 40% alc/vol. &copy;2017 imported by Roust USA, NY, NY.</p>
+    </div>
+  </footer>
+</body>
+</html>
